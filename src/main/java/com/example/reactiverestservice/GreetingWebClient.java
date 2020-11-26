@@ -24,7 +24,7 @@ import reactor.netty.tcp.TcpClient;
 
 public class GreetingWebClient {
 
-    List<User> users = new ArrayList<>();
+    // List<User> users = new ArrayList<>();
     
     private WebClient webclient = WebClient.create("http://localhost:8080");
     TcpClient tcpClient = TcpClient
