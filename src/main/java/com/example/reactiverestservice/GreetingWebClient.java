@@ -1,8 +1,7 @@
 package com.example.reactiverestservice;
 
-import java.util.ArrayList;
+
 import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import com.example.reactiverestservice.Models.Photos;
@@ -10,7 +9,6 @@ import com.example.reactiverestservice.Models.User;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-import org.springframework.http.client.reactive.ReactorClientHttpConnector;
 //import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -19,12 +17,11 @@ import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.netty.http.client.HttpClient;
 import reactor.netty.tcp.TcpClient;
 
 public class GreetingWebClient {
 
-    // List<User> users = new ArrayList<>();
+  
     
     private WebClient webclient = WebClient.create("http://localhost:8080");
     TcpClient tcpClient = TcpClient

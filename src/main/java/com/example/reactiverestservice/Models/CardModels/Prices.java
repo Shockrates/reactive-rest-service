@@ -6,6 +6,10 @@ package com.example.reactiverestservice.Models.CardModels;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -21,6 +25,8 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "eur_foil",
 "tix"
 })
+@Embeddable
+// @Entity
 public class Prices {
 
 @JsonProperty("usd")
