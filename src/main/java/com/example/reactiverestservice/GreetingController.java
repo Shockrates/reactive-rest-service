@@ -20,4 +20,9 @@ public class GreetingController {
 	public Flux<User> user() {
 		return  gwc.getUsers();
     }
+
+    @GetMapping("/hello")
+	public String hello() {
+		return  "Hello, Spring!";
+    }
 }
